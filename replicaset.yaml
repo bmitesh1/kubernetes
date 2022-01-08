@@ -1,0 +1,18 @@
+#this is config will create replicaset and 3 pos.
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+    name: miteshrs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+          app: kubia
+  template:
+    metadata:
+      labels:
+        app: kubia
+    spec:
+       containers:
+         - name: mpod
+           image: nginx:latest   
