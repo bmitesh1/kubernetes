@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+    name: miteshrs1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+          app: kubia1
+  template:
+    metadata:
+      labels:
+        app: kubia1
+    spec:
+       containers:
+         - name: mpod
+           image: luksa/kubia  
+           ports:
+             - containerPort: 8080
+               protocol: TCP 

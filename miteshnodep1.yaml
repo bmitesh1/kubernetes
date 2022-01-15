@@ -1,0 +1,11 @@
+kind: Service
+metadata:
+  name: miteshnp1
+spec:
+  type: NodePort
+  selector:
+    app: kubia1
+  ports:
+  - port: 80
+    targetPort: 8080
+    nodePort: 30123
