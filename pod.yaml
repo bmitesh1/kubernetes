@@ -1,13 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp-manual
+  name: dnsutil
   labels:
-    app: kubia
+    app: myapp
 spec:
   containers:
    - name: myapp
-     image: nginx
+     image: tutum/dnsutils
+     command:
+       - sleep infinity
      ports:
       - containerPort: 8080
         protocol: TCP
