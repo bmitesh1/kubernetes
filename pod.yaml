@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: myapp-manual
   labels:
-    name: kubia
+    app: kubia
 spec:
   containers:
    - name: myapp
