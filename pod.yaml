@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: myapp-manual
   labels:
-    name: myapp-manual
+    name: kubia
 spec:
   containers:
    - name: myapp
-     image: luksa/kubia
+     image: nginx
      ports:
       - containerPort: 8080
         protocol: TCP

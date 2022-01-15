@@ -15,4 +15,7 @@ spec:
     spec:
        containers:
          - name: mpod
-           image: nginx:latest   
+           image: luksa/kubia  
+           ports:
+             - containerPort: 8080
+               protocol: TCP 
