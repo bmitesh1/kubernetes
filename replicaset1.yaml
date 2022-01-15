@@ -14,7 +14,11 @@ spec:
     spec:
        containers:
          - name: mpod
-           image: luksa/kubia  
+           image: tutum/dnsutils 
+           command:
+             - sleep 
+           args: 
+             -  infinity  
            ports:
              - containerPort: 8080
                protocol: TCP 
