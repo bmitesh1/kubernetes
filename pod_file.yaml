@@ -11,7 +11,7 @@ spec:
     image: luksa/fortune
     volumeMounts:
       - name: html
-        mountPath: /vat/htdocs 
+        mountPath: /var/htdocs 
   - name: web-server
     image: nginx:alpine
     volumeMounts:
