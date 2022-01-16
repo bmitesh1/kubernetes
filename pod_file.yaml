@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: myappfortune
   labels:
-    app:  fortune
+    app: kubia
 spec:
   containers:
   - name: html-generator
