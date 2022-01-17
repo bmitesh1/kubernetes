@@ -6,7 +6,7 @@ metadata:
 spec:
   clusterIP: None
   selector:
-    app: myapp
+    app: kubiast
   ports:
   - port: 80
     targetPort: 8080
