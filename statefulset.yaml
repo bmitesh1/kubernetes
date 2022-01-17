@@ -6,16 +6,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: kubia_st
+      app: kubiast
   serviceName: headless
   replicas: 2
   template:
     metadata:
       labels:
-        app: kubia_st
+        app: kubiast
     spec:
       containers:
-      - name: kubia_st
+      - name: kubiast
         image: luksa/kubia-pet
         ports:
         - containerPort: 8080
